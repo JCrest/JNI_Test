@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         call = new Call(this);
+        System.out.println("加上一句话看看变化如何");
     }
 
     public void JavaCallC(View v) {
