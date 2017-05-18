@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        call = new Call();
+        call = new Call(this);
     }
 
     public void JavaCallC(View v) {
@@ -20,6 +20,10 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < array.length; i++) {
             System.out.println(array[i]);
         }
+    }
+    
+    public void CCallJava(View v) {
+        call.callbackAdd();
     }
 
 

@@ -15,6 +15,14 @@ extern "C" {
 JNIEXPORT jintArray JNICALL Java_com_example_jiangchuanfa_javacallcaandccalljava_Call_increaseArrayEles
   (JNIEnv *, jobject, jintArray);
 
+/*
+ * Class:     com_example_jiangchuanfa_javacallcaandccalljava_Call
+ * Method:    callbackAdd
+ * Signature: ()V
+ */
+JNIEXPORT void JNICALL Java_com_example_jiangchuanfa_javacallcaandccalljava_Call_callbackAdd
+  (JNIEnv *, jobject);
+
 #ifdef __cplusplus
 }
 #endif
